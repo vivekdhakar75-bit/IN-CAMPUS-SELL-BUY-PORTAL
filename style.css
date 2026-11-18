@@ -1,0 +1,611 @@
+
+/* ==========================================================
+   PROJECT: IN CAMPUS SELL & BUY PORTAL
+   FILE: style.css
+   PURPOSE: Website layout and visual styling
+   ========================================================== */
+
+
+/* 1. GLOBAL SETTINGS */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f5f7fc;
+    color: #202b3c;
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+button,
+input,
+textarea,
+select {
+    font-family: inherit;
+}
+
+.container {
+    width: 84%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+
+/* 2. NAVIGATION BAR */
+
+.navbar {
+    background: #ffffff;
+    padding: 18px 0;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.logo {
+    font-size: 27px;
+    font-weight: 800;
+    color: #2457d6;
+    letter-spacing: -1px;
+}
+
+.logo span {
+    color: #f59e0b;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+.nav-links a {
+    color: #435066;
+    font-size: 14px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: #2457d6;
+}
+
+.nav-register {
+    background: #2457d6;
+    color: #ffffff !important;
+    padding: 10px 18px;
+    border-radius: 7px;
+}
+
+.nav-register:hover {
+    background: #173fa9;
+}
+
+.logout-form {
+    display: inline;
+}
+
+.nav-button {
+    background: #f1f4fa;
+    color: #344054;
+    border: none;
+    padding: 10px 16px;
+    border-radius: 7px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.nav-button:hover {
+    background: #e1e7f2;
+}
+
+
+/* 3. MAIN CONTENT */
+
+.main-content {
+    min-height: 65vh;
+    padding-top: 35px;
+    padding-bottom: 55px;
+}
+
+
+/* 4. BUTTONS */
+
+.btn {
+    display: inline-block;
+    background: #2457d6;
+    color: #ffffff;
+    padding: 12px 22px;
+    border: none;
+    border-radius: 7px;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #173fa9;
+    transform: translateY(-2px);
+}
+
+.btn-secondary {
+    background: #eaf0ff;
+    color: #2457d6;
+}
+
+.btn-secondary:hover {
+    background: #dce6ff;
+}
+
+.btn-danger {
+    background: #dc3545;
+}
+
+.btn-danger:hover {
+    background: #b91c2b;
+}
+
+
+/* 5. NOTIFICATION MESSAGES */
+
+.alert {
+    padding: 13px 18px;
+    margin-bottom: 18px;
+    border-radius: 7px;
+    font-size: 14px;
+}
+
+.alert-success {
+    background: #e7f7ed;
+    color: #176b37;
+}
+
+.alert-danger {
+    background: #fdebec;
+    color: #a92330;
+}
+
+.alert-warning {
+    background: #fff5d9;
+    color: #805900;
+}
+
+
+/* 6. HOMEPAGE HERO SECTION */
+
+.hero {
+    background: linear-gradient(120deg, #e8efff, #ffffff);
+    padding: 75px 35px;
+    border-radius: 14px;
+    text-align: center;
+    margin-bottom: 55px;
+}
+
+.hero h1 {
+    font-size: 43px;
+    line-height: 1.25;
+    margin-bottom: 18px;
+    color: #172b58;
+}
+
+.hero h1 span {
+    color: #2457d6;
+}
+
+.hero p {
+    color: #667085;
+    font-size: 17px;
+    margin-bottom: 28px;
+}
+
+.search-form {
+    max-width: 650px;
+    margin: auto;
+    display: flex;
+    background: #ffffff;
+    padding: 7px;
+    border-radius: 9px;
+    box-shadow: 0 5px 18px rgba(0, 0, 0, 0.08);
+}
+
+.search-form input {
+    flex: 1;
+    min-width: 0;
+    border: none;
+    outline: none;
+    padding: 13px;
+    font-size: 15px;
+}
+
+.search-form button {
+    border: none;
+    background: #2457d6;
+    color: white;
+    padding: 13px 23px;
+    border-radius: 7px;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+
+/* 7. SECTION HEADINGS */
+
+.section {
+    margin-bottom: 50px;
+}
+
+.section-heading {
+    font-size: 28px;
+    margin-bottom: 8px;
+    color: #172b58;
+}
+
+.section-description {
+    color: #778196;
+    margin-bottom: 25px;
+}
+
+
+/* 8. CATEGORY CARDS */
+
+.category-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.category-card {
+    background: #ffffff;
+    border-radius: 12px;
+    padding: 28px 18px;
+    text-align: center;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.04);
+    transition: 0.3s;
+}
+
+.category-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 22px rgba(0, 0, 0, 0.08);
+}
+
+.category-icon {
+    font-size: 38px;
+    margin-bottom: 12px;
+}
+
+.category-card h3 {
+    font-size: 17px;
+    margin-bottom: 6px;
+}
+
+.category-card p {
+    color: #778196;
+    font-size: 13px;
+}
+
+
+/* 9. PRODUCT CARDS */
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 22px;
+}
+
+.product-card {
+    background: #ffffff;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.05);
+    transition: 0.3s;
+}
+
+.product-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 22px rgba(0, 0, 0, 0.09);
+}
+
+.product-image {
+    width: 100%;
+    height: 190px;
+    object-fit: cover;
+    background: #eaf0ff;
+}
+
+.product-info {
+    padding: 18px;
+}
+
+.product-info h3 {
+    font-size: 17px;
+    margin-bottom: 7px;
+}
+
+.product-price {
+    color: #2457d6;
+    font-size: 21px;
+    font-weight: 700;
+    margin: 8px 0;
+}
+
+.product-category {
+    display: inline-block;
+    background: #edf2ff;
+    color: #2457d6;
+    padding: 4px 10px;
+    border-radius: 20px;
+    font-size: 12px;
+}
+
+.product-seller {
+    font-size: 13px;
+    color: #778196;
+    margin: 10px 0;
+}
+
+
+/* 10. FORM DESIGN */
+
+.form-container {
+    width: 100%;
+    max-width: 520px;
+    margin: 10px auto;
+    background: #ffffff;
+    padding: 35px;
+    border-radius: 13px;
+    box-shadow: 0 5px 22px rgba(0, 0, 0, 0.06);
+}
+
+.form-container h2 {
+    text-align: center;
+    color: #172b58;
+    margin-bottom: 8px;
+}
+
+.form-description {
+    text-align: center;
+    color: #778196;
+    font-size: 14px;
+    margin-bottom: 25px;
+}
+
+.form-group {
+    margin-bottom: 19px;
+}
+
+.form-group label {
+    display: block;
+    font-weight: 600;
+    font-size: 14px;
+    margin-bottom: 7px;
+}
+
+.form-group input,
+.form-group textarea,
+.form-group select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #dce1eb;
+    border-radius: 7px;
+    outline: none;
+    font-size: 14px;
+    background: #ffffff;
+}
+
+.form-group input:focus,
+.form-group textarea:focus,
+.form-group select:focus {
+    border-color: #2457d6;
+    box-shadow: 0 0 0 3px rgba(36, 87, 214, 0.10);
+}
+
+.form-group textarea {
+    min-height: 110px;
+    resize: vertical;
+}
+
+.form-container .btn {
+    width: 100%;
+}
+
+.form-footer {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+    color: #667085;
+}
+
+.form-footer a {
+    color: #2457d6;
+    font-weight: 600;
+}
+
+
+/* 11. DASHBOARD */
+
+.dashboard-welcome {
+    background: #172b58;
+    color: #ffffff;
+    padding: 35px;
+    border-radius: 12px;
+    margin-bottom: 25px;
+}
+
+.dashboard-welcome p {
+    color: #d5def5;
+    margin-top: 8px;
+}
+
+.dashboard-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.dashboard-card {
+    background: #ffffff;
+    padding: 25px;
+    border-radius: 11px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.04);
+}
+
+.dashboard-card h3 {
+    font-size: 16px;
+    color: #667085;
+}
+
+.dashboard-number {
+    font-size: 32px;
+    font-weight: 700;
+    color: #2457d6;
+    margin-top: 8px;
+}
+
+
+/* 12. TABLE AND PRODUCT DETAILS */
+
+.table-wrapper {
+    background: #ffffff;
+    border-radius: 10px;
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    text-align: left;
+    padding: 14px;
+    border-bottom: 1px solid #edf0f5;
+    font-size: 14px;
+}
+
+th {
+    background: #edf2ff;
+    color: #172b58;
+}
+
+.detail-container {
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+}
+
+.detail-image {
+    width: 100%;
+    max-height: 400px;
+    object-fit: contain;
+    background: #f5f7fc;
+    border-radius: 10px;
+}
+
+.detail-info h1 {
+    color: #172b58;
+    margin-bottom: 14px;
+}
+
+
+/* 13. FOOTER */
+
+.footer {
+    background: #172b58;
+    color: #ffffff;
+    padding: 38px 0;
+    text-align: center;
+}
+
+.footer h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.footer p {
+    color: #d5def5;
+    font-size: 14px;
+}
+
+.copyright {
+    margin-top: 17px;
+    font-size: 12px !important;
+}
+
+
+/* 14. RESPONSIVE DESIGN */
+
+@media (max-width: 950px) {
+
+    .container {
+        width: 90%;
+    }
+
+    .category-grid,
+    .product-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+@media (max-width: 650px) {
+
+    .nav-container {
+        flex-direction: column;
+    }
+
+    .nav-links {
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 13px;
+    }
+
+    .hero {
+        padding: 50px 18px;
+    }
+
+    .hero h1 {
+        font-size: 31px;
+    }
+
+    .hero p {
+        font-size: 15px;
+    }
+
+    .category-grid,
+    .product-grid,
+    .dashboard-grid,
+    .detail-container {
+        grid-template-columns: 1fr;
+    }
+
+    .form-container {
+        padding: 25px 20px;
+    }
+
+    .search-form button {
+        padding: 12px;
+    }
+
+}
